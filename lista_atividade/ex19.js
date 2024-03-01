@@ -15,7 +15,6 @@ function fizz_buzz() {
         else {
             console.log(num_atual)
         }
-
     }
 }
 fizz_buzz()

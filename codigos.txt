@@ -1,0 +1,1 @@
+varial = [] ou {}.filter((outra_variavel => {condicao}))  // filtra o objeto ou array com a condicao imposta, parecido com o for

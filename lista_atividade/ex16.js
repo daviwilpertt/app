@@ -37,11 +37,23 @@ const usuarios = [
     },
   ];
   
-  function maior18() {
-    for (let i = 0; i < usuarios.length; i++) {
-        if (usuarios[i].idade >= 18) {
-            console.log(usuarios[i])
-        }
+//   function maior18() {
+//     for (let i = 0; i < usuarios.length; i++) {
+//         if (usuarios[i].idade >= 18) {
+//             console.log(usuarios[i])
+//         }
+//     }
+// }
+//   maior18()
+
+const maior = usuarios.filter(
+  (usuario) => {
+    if (usuario.idade >= 18) {
+      return true;
     }
-}
-  maior18()
+    else {
+      return false;
+    }
+  }
+)
+console.log(maior)
