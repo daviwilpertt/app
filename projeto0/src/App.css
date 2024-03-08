@@ -21,4 +21,10 @@ footer{
   "cabecalho cabecalho"
   "lateral_esq principal"
   "rodape rodape";
+  
+  grid-template-rows:
+  "64px 1fr 88px";
+  
+  grid-template-column:
+  "288px 1fr"
 }
