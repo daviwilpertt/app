@@ -1,16 +1,24 @@
 header{
   background-color: aquamarine;
+  grid-area: cabecalho;
 }
 aside{
   background-color: bisque;
+  grid-area: lateral_esq;
 }
 main{
   background-color: crimson;
+  grid-area: principal;
 }
 footer{
   background-color: coral;
+  grid-area: rodape;
 }
 
 #root{
   display: grid;
+  gris-template-areas:
+  "cabecalho cabecalho"
+  "lateral_esq principal"
+  "rodape rodape";
 }
