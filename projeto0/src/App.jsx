@@ -13,11 +13,13 @@ function App() {
       </header>
 
       <aside>da panamera aiai</aside>
+      <main>
+      <p>piparaparapo</p>
 
+      </main>
       <footer>
         pooooooooooooo
       </footer>
-      <p>piparaparapo</p>
     </>
   )
 }

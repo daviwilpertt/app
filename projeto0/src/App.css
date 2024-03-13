@@ -17,7 +17,7 @@ footer{
 
 #root{
   display: grid;
-  gris-template-areas:
+  grid-template-areas:
   "cabecalho cabecalho"
   "lateral_esq principal"
   "rodape rodape";
@@ -25,6 +25,6 @@ footer{
   grid-template-rows:
   "64px 1fr 88px";
   
-  grid-template-column:
-  "288px 1fr"
+  grid-template-columns:
+      "288px 1fr";
 }
