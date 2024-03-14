@@ -1,20 +1,3 @@
-header{
-  background-color: aquamarine;
-  grid-area: cabecalho;
-}
-aside{
-  background-color: bisque;
-  grid-area: lateral_esq;
-}
-main{
-  background-color: crimson;
-  grid-area: principal;
-}
-footer{
-  background-color: coral;
-  grid-area: rodape;
-}
-
 #root{
   display: grid;
   grid-template-areas:
@@ -23,8 +6,8 @@ footer{
   "rodape rodape";
   
   grid-template-rows:
-  "64px 1fr 88px";
+  "";
   
   grid-template-columns:
-      "288px 1fr";
+      "";
 }

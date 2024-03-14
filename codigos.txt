@@ -1,3 +1,5 @@
 varial = [] ou {}.filter((outra_variavel => {condicao}))  // filtra o objeto ou array com a condicao imposta, parecido com o for
 inciar projeto no terminal // npm install vite@latest
 abrir projeto // npm run dev
+importar css // import './caminho_arquivo'
+importar jsx // import nome_exportado from 'caminho_arquivo' 
