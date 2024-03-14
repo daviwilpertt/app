@@ -1,4 +1,7 @@
 footer{
-    background-color: coral;
-    grid-area: rodape;
+  display: flex;
+  align-items: center;
+  background-color: coral;
+  grid-area: rodape;
+  padding: 10px;
   }
