@@ -1,4 +1,4 @@
-header{
-    background-color: aquamarine;
-    grid-area: cabecalho;
-  }
+header {
+  background-color: var(--cor-primaria);
+  grid-area: cabecalho;
+}

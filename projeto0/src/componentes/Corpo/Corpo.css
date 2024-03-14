@@ -1,4 +1,4 @@
 main{
-    background-color: crimson;
+    background-color: var(--cor-primaria-escura);
     grid-area: principal;
   }
