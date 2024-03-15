@@ -1,9 +1,10 @@
 import './Cabecalho.css'
-import Avatar from '../Avatar/Avatar'
+import Avatar from '../Avatar/Avatar.jsx'
 const Cabecalho = () => {
     return <>
         <header>
-            <Avatar />
+            <img className='avatar' src="/vite.svg" alt="" />
+            <Avatar nome='Davi Wilpert'/>
         </header>
     </>
 };
