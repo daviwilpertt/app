@@ -3,3 +3,4 @@ inciar projeto no terminal // npm install vite@latest
 abrir projeto // npm run dev
 importar css // import './caminho_arquivo'
 importar jsx // import nome_exportado from 'caminho_arquivo' 
+React retorna so uma coisa, não pode retornar 2 h1
