@@ -9,14 +9,19 @@ import ListaProdutos from './componentes/ListaProdutos/ListaProdutos';
 import MesAtual from './componentes/MesAtual/MesAtual';
 import MinutoAtual from './componentes/MinutoAtual/MinutoAtual';
 import Multiplicacao from './componentes/Multiplicacao/Multiplicacao';
+import NomesOrdenados from './componentes/NomesOrdenados/NomesOrdenados';
 import NumerosImpares from './componentes/NumerosImpares/NumerosImpares';
 import NumerosPares from './componentes/NumerosPares/NumerosPares';
 import OlaMundo from './componentes/OlaMundo/OlaMundo';
 import OlaPessoa from './componentes/OlaPessoa/OlaPessoa';
 import Soma from './componentes/Soma/Soma';
 import Subtracao from './componentes/Subtracao/Subtracao';
+import TamanhoTexto from './componentes/TamanhoTexto/TamanhoTexto';
 import VerificarIdade from './componentes/VerificarIdade/VerificarIdade';
 
+
+let lista_nomes = ['Maria', 'João', 'Ana', 'Pedro', 'Carla']
+let lista_numeros = [56, 23, 89, 42, 10, 77, 34, 91, 15, 68]
 function App() {
   return (
     <>
@@ -116,12 +121,7 @@ function App() {
         O componente deve mostrar uma lista com os números pares em uma ul com o
         fundo azul e a letra amarela.
       </span>
-      <NumerosPares numeros='1' />
-      <NumerosPares numeros='2' />
-      <NumerosPares numeros='3' />
-      <NumerosPares numeros='4' />
-      <NumerosPares numeros='5' />
-      <NumerosPares numeros='6' />
+      <NumerosPares numeros={lista_numeros} />
       <hr />
 
       <span>
@@ -130,12 +130,7 @@ function App() {
         O componente deve mostrar uma lista com os números ímpares em uma ul
         com o fundo azul e a letra amarela.
       </span>
-      <NumerosImpares numeros='1' />
-      <NumerosImpares numeros='2' />
-      <NumerosImpares numeros='3' />
-      <NumerosImpares numeros='4' />
-      <NumerosImpares numeros='5' />
-      <NumerosImpares numeros='6' />
+      <NumerosImpares numeros={lista_numeros} />
       <hr />
 
       <span>
@@ -187,6 +182,27 @@ function App() {
       <Calculadora num1='5' operacao='-' num2='3' />
       <Calculadora num1='6' operacao='*' num2='30' />
       <Calculadora num1='654' operacao='/' num2='75' />
+      <hr />
+
+      <span>
+        18.Crie um componente chamado 'TamanhoTexto' que aceita uma prop chamado
+        'texto', o componente deve mostrar:
+        O tamanho do texto informado em uma div com o fundo marrom, texto
+        justificado à direita na cor amarela.
+      </span>
+      <TamanhoTexto texto='tangamandapio' />
+      <TamanhoTexto texto='eh ux guri nau tem comoh' />
+      <hr />
+
+      <span>
+        19.Crie um componente chamado 'NomesOrdenados' que aceita uma prop
+        chamado 'nomes' e deve ser uma lista com pelo menos 5 nomes de pessoas
+        aleatórias e não ordenada. O componente deve mostrar:
+        Uma lista ordenada dos nomes em ordem alfabética em uma ol com o fundo
+        rosa, texto na cor vermelha.
+        Utilize a função sort para ordenar a lista.
+      </span>
+      <NomesOrdenados nome={lista_nomes.sort()} />
     </>
   );
 }
