@@ -1,5 +1,6 @@
 import './App.css';
 import AnoAtual from './componentes/AnoAtual/AnoAtual';
+import Calculadora from './componentes/Calculadora/Calculadora';
 import DataCompletaAtual from './componentes/DataCompletaAtual/DataCompletaAtual';
 import DiaAtual from './componentes/DiaAtual/DiaAtual';
 import Divisao from './componentes/Divisao/Divisao';
@@ -170,10 +171,22 @@ function App() {
         O resultado da multiplicação entre os dois números em uma div com o fundo
         laranja, texto centralizado na cor azul.
       </span>
-    <Multiplicacao num1='4' num2='8' />
+      <Multiplicacao num1='4' num2='8' />
       <hr />
 
-
+      <span>
+        17.Crie um componente chamado 'Calculadora' que aceita as props 'num1', 'num2' e
+        'operacao'. A 'operacao' deve determinar que tipo de operação matemática que
+        deve ser realizada (ex: soma, subtracao, multiplicacao, divisao). O componente
+        deve mostrar:
+        O resultado da operação entre os dois números em uma div com o fundo verde,
+        texto centralizado na cor branca.
+        Utilize do switch nesse componente.
+      </span>
+      <Calculadora num1='2' operacao='+' num2='7' />
+      <Calculadora num1='5' operacao='-' num2='3' />
+      <Calculadora num1='6' operacao='*' num2='30' />
+      <Calculadora num1='654' operacao='/' num2='75' />
     </>
   );
 }
