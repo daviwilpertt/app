@@ -2,12 +2,18 @@ import './App.css';
 import AnoAtual from './componentes/AnoAtual/AnoAtual';
 import DataCompletaAtual from './componentes/DataCompletaAtual/DataCompletaAtual';
 import DiaAtual from './componentes/DiaAtual/DiaAtual';
+import Divisao from './componentes/Divisao/Divisao';
 import HoraAtual from './componentes/HoraAtual/HoraAtual';
 import ListaProdutos from './componentes/ListaProdutos/ListaProdutos';
 import MesAtual from './componentes/MesAtual/MesAtual';
 import MinutoAtual from './componentes/MinutoAtual/MinutoAtual';
+import Multiplicacao from './componentes/Multiplicacao/Multiplicacao';
+import NumerosImpares from './componentes/NumerosImpares/NumerosImpares';
+import NumerosPares from './componentes/NumerosPares/NumerosPares';
 import OlaMundo from './componentes/OlaMundo/OlaMundo';
 import OlaPessoa from './componentes/OlaPessoa/OlaPessoa';
+import Soma from './componentes/Soma/Soma';
+import Subtracao from './componentes/Subtracao/Subtracao';
 import VerificarIdade from './componentes/VerificarIdade/VerificarIdade';
 
 function App() {
@@ -104,8 +110,70 @@ function App() {
       <hr />
 
       <span>
-        
+        11.Crie um componente chamado 'NumerosPares' que aceita uma prop chamada
+        'numeros' e deve ser uma lista de números inteiros.
+        O componente deve mostrar uma lista com os números pares em uma ul com o
+        fundo azul e a letra amarela.
       </span>
+      <NumerosPares numeros='1' />
+      <NumerosPares numeros='2' />
+      <NumerosPares numeros='3' />
+      <NumerosPares numeros='4' />
+      <NumerosPares numeros='5' />
+      <NumerosPares numeros='6' />
+      <hr />
+
+      <span>
+        12.Crie um componente chamado 'NumerosImpares' que aceita uma prop chamada
+        'numeros' e deve ser uma lista de números inteiros.
+        O componente deve mostrar uma lista com os números ímpares em uma ul
+        com o fundo azul e a letra amarela.
+      </span>
+      <NumerosImpares numeros='1' />
+      <NumerosImpares numeros='2' />
+      <NumerosImpares numeros='3' />
+      <NumerosImpares numeros='4' />
+      <NumerosImpares numeros='5' />
+      <NumerosImpares numeros='6' />
+      <hr />
+
+      <span>
+        13.Crie um componente chamado 'Soma' que aceita as props 'num1', 'num2', o
+        componente deve mostrar:
+        O resultado da soma entre os dois números em uma div com o fundo marrom,
+        texto centralizado na cor branca.
+      </span>
+      <Soma num1='2' num2='5' />
+      <hr />
+
+      <span>
+        14.Crie um componente chamado 'Subtracao' que aceita as props 'num1', 'num2', o
+        componente deve mostrar:
+        O resultado da subtração entre os dois números em uma div com o fundo cinza,
+        texto centralizado na cor branca.
+      </span>
+      <Subtracao num1='234' num2='765' />
+      <hr />
+
+      <span>
+        15.Crie um componente chamado 'Divisao' que aceita as props 'num1', 'num2', o
+        componente deve mostrar:
+        O resultado da divisão entre os dois números em uma div com o fundo laranja,
+        texto centralizado na cor azul.
+      </span>
+      <Divisao num1='13' num2='6' />
+      <hr />
+
+      <span>
+        16.Crie um componente chamado 'Multiplicacao' que aceita as props 'num1', 'num2',
+        o componente deve mostrar:
+        O resultado da multiplicação entre os dois números em uma div com o fundo
+        laranja, texto centralizado na cor azul.
+      </span>
+    <Multiplicacao num1='4' num2='8' />
+      <hr />
+
+
     </>
   );
 }
