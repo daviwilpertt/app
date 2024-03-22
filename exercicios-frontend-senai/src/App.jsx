@@ -113,6 +113,7 @@ function App() {
       </span>
       <VerificarIdade idade='18' />
       <VerificarIdade idade='17' />
+      <VerificarIdade idade='98' />
       <hr />
 
       <span>
