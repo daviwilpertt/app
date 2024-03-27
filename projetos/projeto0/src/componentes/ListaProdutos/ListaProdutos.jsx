@@ -20,7 +20,7 @@ const ListaProdutos = () => {
   ];
 
   return (
-    <div>
+    <div className='div_lista'>
       <h1>Lista de Produtos</h1>
       {produtos.map((item, index) => {
         return (

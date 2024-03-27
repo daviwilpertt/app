@@ -10,3 +10,8 @@
   border: 1px solid var(--cor-primaria);
   background-color: var(--cor-texto-claro);
 }
+.div_lista {
+  display: grid;
+  place-content: center;
+  width: 30%;
+}

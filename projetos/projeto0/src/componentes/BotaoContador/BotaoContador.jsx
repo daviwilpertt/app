@@ -1,10 +1,13 @@
+import React from 'react'
 import './BotaoContador.css'
 
 const BotaoContador = () => {
-    let numero = 0
+    const [numero, setNumero] = React.useState(0)
+
     const incrementar = () => {
-        numero += 1
+        setNumero(numero + 1)
     }
+    
     return <button onClick={incrementar}>{numero}</button>
 }
 

@@ -4,3 +4,5 @@ abrir projeto // npm run dev
 importar css // import './caminho_arquivo'
 importar jsx // import nome_exportado from 'caminho_arquivo' 
 React retorna so uma coisa, não pode retornar 2 h1
+const [variavel, setVariavel] = React.useState() // como se fosse recarregar a pagina, dentro do parenteses coloca o valor inicial do estado,
+const incrementar = () = > {setVariavel(condicao)}
