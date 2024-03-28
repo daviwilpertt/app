@@ -8,7 +8,7 @@ const BotaoContador = () => {
         setNumero(numero + 1)
     }
     
-    return <button onClick={incrementar}>{numero}</button>
+    return <button className='botaoContador' onClick={incrementar}>contador é: {numero}</button>
 }
 
 export default BotaoContador

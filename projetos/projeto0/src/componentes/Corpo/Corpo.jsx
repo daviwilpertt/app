@@ -11,14 +11,20 @@ const Corpo = () => {
   }
   return (
     <main>
+      <div className='divBotoes'>
       <Botao_custom tipo='secundario' onClick={() => setExemplo('ListaProdutos')}>Lista Produtos</Botao_custom>
       <Botao_custom onClick={() => setExemplo('BotaoContador')}>Botão Contador</Botao_custom>
-      <Botao_custom onClick=
+        <Botao_custom onClick={() => setExemplo('Formulario')}>Formulario</Botao_custom>
+      </div>
 
+      <div className='divConteudo'>
       {exemplo === 'ListaProdutos' && <ListaProdutos />}
       {exemplo === 'BotaoContador' && <BotaoContador />}
+        {exemplo === 'Formulario' && <Formulario />}
+      </div>
 
-      <Formulario />
+
+      {/* <Formulario /> */}
 
     </main>
   );
