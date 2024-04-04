@@ -8,6 +8,7 @@ import Diminuir from "./componentes/Diminuir/Diminuir";
 import Dividir from "./componentes/Dividir/Dividir";
 import MostrarTela from "./componentes/MostrarTela/MostrarTela";
 import Multiplicar from "./componentes/Multiplicar/Multiplicar";
+import RemoverNome from "./componentes/RemoverNome/RemoverNome";
 import Somar from "./componentes/Somar/Somar";
 
 function App() {
@@ -79,6 +80,11 @@ function App() {
         <hr />
       </span>
 
+      <span>
+        <p>Exercício 12</p>
+        <RemoverNome />
+        <hr />
+      </span>
     </>
   );
 }
