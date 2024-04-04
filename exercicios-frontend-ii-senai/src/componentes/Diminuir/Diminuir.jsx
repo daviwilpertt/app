@@ -2,14 +2,9 @@ import { useState } from 'react'
 import './Diminuir.css'
 
 const Diminuir = () => {
-    let [setCampoNum] = useState('')
     let [num1, setNum1] = useState(0)
     let [num2, setNum2] = useState(0)
     let saida_sub = document.querySelector('#saida_sub')
-
-    const alterarNum = (event) => {
-        setCampoNum(event.target.value)
-    }
 
     const diminuir = () => {
         saida_sub.innerHTML = num1 - num2

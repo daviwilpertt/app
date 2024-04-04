@@ -1,7 +1,13 @@
+import AddNome from "./componentes/AddNome/AddNome";
 import BotaoContador from "./componentes/BotaoContador/BotaoContador";
+import CalculoIMC from "./componentes/CalculoIMC/IMC";
+import Dolar from "./componentes/CambioDolar/Dolar";
+import Euro from "./componentes/CambioEuro/Euro";
 import Contador from "./componentes/Contador/Contador";
 import Diminuir from "./componentes/Diminuir/Diminuir";
+import Dividir from "./componentes/Dividir/Dividir";
 import MostrarTela from "./componentes/MostrarTela/MostrarTela";
+import Multiplicar from "./componentes/Multiplicar/Multiplicar";
 import Somar from "./componentes/Somar/Somar";
 
 function App() {
@@ -34,6 +40,42 @@ function App() {
       <span>
         <p>Exercício 5</p>
         <Diminuir />
+        <hr />
+      </span>
+
+      <span>
+        <p>Exercício 6</p>
+        <Multiplicar />
+        <hr />
+      </span>
+
+      <span>
+        <p>Exercício 7</p>
+        <Dividir />
+        <hr />
+      </span>
+
+      <span>
+        <p>Exercício 8</p>
+        <Dolar />
+        <hr />
+      </span>
+
+      <span>
+        <p>Exercício 9</p>
+        <Euro />
+        <hr />
+      </span>
+
+      <span>
+        <p>Exercício 10</p>
+        <CalculoIMC />
+        <hr />
+      </span>
+
+      <span>
+        <p>Exercício 11</p>
+        <AddNome />
         <hr />
       </span>
 

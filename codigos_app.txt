@@ -6,3 +6,4 @@ importar jsx // import nome_exportado from 'caminho_arquivo'
 React retorna so uma coisa, não pode retornar 2 h1
 const [variavel, setVariavel] = React.useState() // como se fosse recarregar a pagina, dentro do parenteses coloca o valor inicial do estado,
 const incrementar = () = > {setVariavel(condicao)}
+matriz.concat(variavel)  // como se fosse um push no react, atualiza a matriz com o elemento variavel
