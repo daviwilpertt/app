@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import Minions from './componentes/Minions/Minions';
 import { useState } from 'react';
+import CORES from './comum/constantes/cores.js'
+import BotaoCustom from './comum/componentes/BotaoCustom/BotaoCustom.js';
 
 
 export default function App() {
@@ -15,19 +16,11 @@ export default function App() {
     setContador(contador - 1)
   }
 
-
-
   return (
     <View style={styles.container}>
-      <Minions />
-      <TouchableOpacity style={styles.botoes} onPress={Somar}>
-        +
-      </TouchableOpacity>
-      <Text style={styles.contador}>{contador}</Text>
-
-      <TouchableOpacity style={styles.botoes} onPress={Subtrair}>
-        -
-      </TouchableOpacity>
+      <BotaoCustom onPress={Somar}>+</BotaoCustom>
+      {contador}
+      <BotaoCustom onPress={Subtrair}>-</BotaoCustom>
       <StatusBar style="auto" />
     </View>
   );
@@ -36,18 +29,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: CORES.PRIMARIA,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  contador: {
-    color: 'red',
-    fontSize: 200,
-  },
-  botoes: {
-    backgroundColor: 'blue',
-    fontSize: 100,
-    padding: 20,
-    borderRadius: 50
   },
 });
