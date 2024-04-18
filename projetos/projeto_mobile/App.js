@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useState } from 'react';
-import CORES from './comum/constantes/cores.js'
+// import CORES from './comum/constantes/cores.js'
+import './App.css'
 import BotaoCustom from './comum/componentes/BotaoCustom/BotaoCustom.js';
 
 
@@ -19,7 +20,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <BotaoCustom onPress={Somar}>+</BotaoCustom>
-      {contador}
+      <Text>{contador}</Text>
       <BotaoCustom onPress={Subtrair}>-</BotaoCustom>
       <StatusBar style="auto" />
     </View>
