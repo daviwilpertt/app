@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { useState } from 'react';
 import CORES from './comum/constantes/cores.js'
 import BotaoCustom from './comum/componentes/BotaoCustom/BotaoCustom.js';
@@ -29,6 +29,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'row',
     backgroundColor: CORES.PRIMARIA,
     alignItems: 'center',
     justifyContent: 'center',
