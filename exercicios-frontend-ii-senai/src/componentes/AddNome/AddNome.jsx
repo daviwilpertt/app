@@ -4,6 +4,7 @@ const AddNome = () => {
 
     let [nome, setNome] = useState('')
     let [lista, setLista] = useState([])
+    
     const mudarNome = (event) => {
         setNome(event.target.value)
 
