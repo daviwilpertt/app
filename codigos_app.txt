@@ -7,3 +7,6 @@ React retorna so uma coisa, não pode retornar 2 h1
 const [variavel, setVariavel] = React.useState() // como se fosse recarregar a pagina, dentro do parenteses coloca o valor inicial do estado,
 const incrementar = () = > {setVariavel(condicao)}
 matriz.concat(variavel)  // como se fosse um push no react, atualiza a matriz com o elemento variavel
+
+iniciar projeto react-native: npm i g npx | npx create-expo-app nome_projeto | mudar package.json (start: 'expo start --tunnel') |
+npm run web | npx expo install react-native-web react-dom @expo/metro-runtime | npm run start

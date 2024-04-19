@@ -9,13 +9,15 @@ const estilos = StyleSheet.create({
 
 const BotaoCustom = (props) => {
 
-    return <View>
-        <Pressable id='botao' onPress={props.onPress}>
-            <Text>
-                {props.children}
-            </Text>
-        </Pressable>
-    </View>
+    return (
+        <View>
+            <Pressable style={estilos.botao} onPress={props.onPress}>
+                <Text>
+                    {props.children}
+                </Text>
+            </Pressable>
+        </View>
+    )
 }
 
 export default BotaoCustom
