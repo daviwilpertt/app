@@ -10,7 +10,7 @@ const estilos = StyleSheet.create({
 const BotaoCustom = (props) => {
 
     return <View>
-        <Pressable style={} id='botao' onPress={props.onPress}>
+        <Pressable style={estilos.CORES} id='botao' onPress={props.onPress}>
             <Text>
                 {props.children}
             </Text>
